@@ -1,0 +1,59 @@
+.todo_card {
+    background: var(--todo-bg);
+    padding: .6rem;
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+    border-radius: 5px;
+}
+
+.todo_card .todo {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.todo .bullet {
+    display: block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: darkblue;
+}
+
+.todo .todo_text {
+    all: unset;
+    width: 100%;
+    padding: .35rem .4rem;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    font-weight: 600;
+}
+
+.todo_card .todo_actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .4rem;
+}
+
+.todo_actions button {
+    all: unset;
+    cursor: pointer;
+    display: flex;
+    background: white;
+    padding: .5rem;
+    border-radius: 5px;
+    border: 1.5px solid gray;
+    transition: background .2ms ease-in-out;
+}
+
+.todo_actions button:hover{
+    background-color: var(--gray);
+}
+
+.todo_actions button:active{
+    border: 1.5px solid #2d2d2d;
+
+}
+
